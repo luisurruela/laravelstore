@@ -1,23 +1,27 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 
-Vue.use(Router)
+import Store from './views/Store'
+import Login from './views/Login'
+import Error from './views/Error'
 
-export default new Router({
+Vue.use(VueRouter)
+
+export default new VueRouter({
     routes: [
         {
             path: '/',
             name: 'store',
-            component: require('./views/Store')
+            component: Store
         },
         {
-            path: '/signin',
+            path: '/login',
             name: 'login',
-            component: require('./views/Login')
+            component: Login
         },
         {
             path: '*',
-            component: require('./views/404')
+            component: Error
         },
     ],
     mode: 'history'

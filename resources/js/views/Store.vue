@@ -1,8 +1,9 @@
 <template>
   <div>
-      <div class="col-md-8">
-          <products-component />
-      </div>
+      
+    <header-component />
+    <products-component />
+      
   </div>
 </template>
 

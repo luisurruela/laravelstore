@@ -1,5 +1,8 @@
 <template>
-  <login-component></login-component>
+  <div>
+  <header-component />
+  <login-component />
+  </div>
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
 
-    <div>
+    <div class="mt-4">
         <div class="container">
             <h1>{{title}}</h1>
             <div class="row">
@@ -38,7 +38,6 @@ export default {
         fetchProducts() {
             axios.get('/api/products').then(res => {
                 this.products = res.data;
-                console.dir(this.products)
             })
         }
     },
